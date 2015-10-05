@@ -1,7 +1,7 @@
 function getTime(){
 
   //Create new date object
-  var newClock = $('#clock')
+  var newClock = $('#firstClock')
   var time = new Date ();
 
   //Make variables for each time segment that we want
