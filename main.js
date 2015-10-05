@@ -102,11 +102,17 @@ function getTimeThree(){
     var secondsHex = seconds.toString(16);
     var sec = ((secondsHex < 10)||(secondsHex === 'a')||(secondsHex ==='b')||(secondsHex ==='c')||(secondsHex ==='d')||(secondsHex==='e')||(secondsHex==='f')) ? '0' + secondsHex: secondsHex;
 
- 
+  //Combine the different time pieces of time
+  
 
- var hexTime = hour + min + sec;
+  var hexTime = hour + min + sec;
+  var hexBg = '#' + hexTime;
+  
   //Fill currentTime as text in newClock, on browser
   newClock.text(hexTime);
+
+  //Changing background color to match hex number
+  $('#thirdClock').css('background-color', hexBg);
 
 };
 
