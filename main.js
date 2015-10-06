@@ -13,7 +13,7 @@ function getTimeOne(){
   var seconds = time.getSeconds();
 
   //Convert time variables to show appropriately for clock
-  var convertedHours = (hours > 12) ? '0'+(hours - 12): hours;
+  var convertedHours = (hours > 12) ? '0'+(hours - 12): '0' + hours;
   var convertedMinutes = (minutes < 10) ? '0' + minutes : minutes;
   var convertedSeconds = (seconds < 10) ? '0' + seconds : seconds;
 
@@ -46,7 +46,7 @@ function getTimeTwo(){
   var seconds = time.getSeconds();
 
   //Convert time variables to show appropriately for clock
-  var convertedHours = (hours > 12) ? '0'+(hours - 12): hours;
+  var convertedHours = (hours > 12) ? '0'+(hours - 12): '0' + hours;
   var convertedMinutes = (minutes < 10) ? '0' + minutes : minutes;
   var convertedSeconds = (seconds < 10) ? '0' + seconds : seconds;
 
